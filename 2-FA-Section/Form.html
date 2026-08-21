@@ -3,18 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Form</title>
+</head> 
 <body>
     <form>
-        <label >Name: </label><br><br>
-        <input type="text"  maxlength="12" size="10" placeholder="Enter your name" required><br><br>
-        <label>Password: </label><br><br>
-        <input type="password" size="20" placeholder="Enter your password"><br><br>
-        <label>Email: </label><br><br>
-        <input type="email" placeholder="Enter your email"><br><br>
-        <label>D.O.B: </label>
-        <input type="date" placeholder="D.O.B" size="40">
-         </form>
+        <fieldset>
+            <label>Name:</label><br><br>
+        <input type="text" placeholder="Enter your name" maxlength="12" size="30" required><br><br>
+        <label>Password:</label><br><br>
+        <input type="password" placeholder="Enter your password"><br><br>
+        <label>Email:</label><br><br>
+        <input type="email"><br><br>
+        <label>D.O.B:</label>
+        <input type="date"  required><br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Others<br><br>
+        <label>Favourite dishes:</label>
+        <input type="checkbox">Dosa
+        <input type="checkbox">Idli
+        <input type="checkbox">Sambar Rice
+        <input type="checkbox">Pizza<br><br>
+        <label>Skills:</label>
+        <select>
+           <optgroup label="frontend">
+              <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+            <option selected>Java</option>
+           </optgroup>
+           <optgroup label="Backend">
+            <option selected>Java</option>
+            <option>Python</option>
+           </optgroup>
+           <optgroup label="database">
+            <option selected>DBMS</option>
+           </optgroup>
+        </select><br><br>
+        <label>Mobile number:</label>
+        <input type="tel" pattern="\+91 [0-9]{9}"><br><br>
+        <label>Comment Box:</label><br><br>
+        <textarea cols="7" rows="7"></textarea><br><br>
+        <label>Resume:</label>
+        <input type="file"><br><br>
+        <input type="Submit">
+        <input type="reset">
+        <input type="button" value="SignUp">
+        <button>LogIn</button>
+        </fieldset>
+    </form>
 </body>
 </html>
