@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:2px solid green;
+            background-color: chartreuse;
+            width:100px;
+            height: 100px;
+            /* transition: height 4s linear 2s; */
+            transition-property:  transform;
+            transition-duration: 4s;
+            transition-timing-function:ease-out ;
+            transition-delay: 2s;
+        }
+        .box:hover{
+            
+            /* transform:translate(100px, 200px) */
+            /* transform: rotate(-360deg); */
+            /* transform:scale(0.5); */
+            /* transform: skew(360deg); */
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition Properties</h1>
+    <div class="box"></div>
+</body>
+</html>

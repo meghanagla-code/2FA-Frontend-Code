@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border:2px solid green;
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .linear{
+            background-image: linear-gradient(to right bottom,red,blue,pink,yellow,green,brown,grey);
+        }
+        .radial{
+            background: radial-gradient(violet,blue,white,indigo,yellow,red,pink);
+        }
+        .conic{
+            background-image: conic-gradient(orange, orange 45deg, grey 45deg, grey 130deg, aqua 130deg, aqua 200deg, pink 200deg,pink 240deg, blue 240deg, blue 360deg);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Linear Gradient</h1>
+    <div class="box linear"></div>
+    <h1>Radial Gradient</h1>
+    <div class="box radial"></div>
+    <h1>Conic Gradient</h1>
+    <div class="box conic"></div>
+</body>
+</html>
