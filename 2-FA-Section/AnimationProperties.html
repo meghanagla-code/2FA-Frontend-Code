@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            border:2px solid  green;
+            background-color: chartreuse;
+            width:100px;
+            height: 100px;
+            animation-name: ganapathi;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ganapathi{
+            0%{
+                background-color: red;
+            }
+            25%{
+                background-color: blue;
+                transform: translate(100px);
+            }
+            50%{
+                background-color: yellow;
+            }
+            75%{
+                background-color: aqua;
+            }
+            100%{
+                background-color: pink;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation Properties</h1>
+    <div class="div"></div>
+</body>
+</html>
