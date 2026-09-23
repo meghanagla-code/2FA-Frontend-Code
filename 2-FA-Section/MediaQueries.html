@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .division{
+            border: 2px solid green;
+            background-color: yellow;
+            width: 1550px;
+            height: 500px;
+        }
+        @media (min-width:600px) and (max-width:800px){
+             .division{
+                 background-color: green;
+                 width:1000px;
+                 height: 300px;
+             }
+        }
+        @media (min-width:300px) and (max-width:400px){
+            .division{
+                background-color: pink;
+            border-color: red;
+                 height: 900px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="division"></div>
+</body>
+</html>
